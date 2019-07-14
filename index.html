@@ -152,6 +152,59 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-总线设备驱动模型引入" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>总线设备驱动模型<br>1.1 总线设备驱动模型的引入<br>1.1.1 陷入绝境<br>下面我们设想一个名字叫做ABC的简单网卡，它需要接在一个CPU（假设CPUx）的内存总线上，需要地址、数据和控制总线（以及中断pin脚等）。<br><img src="https://i.imgur.com/diScGMV.png" alt><br>那么在ABC的网卡驱动里面，我们需要定义ABC的基地址、中断号等信息。假设在CPU x电路板上面，ABC的地址为0x100000，中断号为10。假设我们是这样定义的宏：</p>
+<p>#define ABC_BASE 0x100000</p>
+<p>#define ABC_interrupt 10</p>
+<p>并且这样写代码完成发送报文和初始化申请中断：</p>
+<p>#define ABC_BASE 0x100000</p>
+<p>#define ABC_interrupt 10</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/14/总线设备驱动模型引入/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-ARM时钟体系介绍及编程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
